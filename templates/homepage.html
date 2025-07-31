@@ -16,21 +16,47 @@
 <body>
 
     <nav class="navbar px-3" style="background-color: var(--charcoal);">
-    <a class="navbar-brand fw-bold" href="#" style="color: var(--blush);">Audryssa Yuanwie</a>
+    <a class="navbar-brand" href="#" style="color: var(--blush);font-family: 'Angelissa', cursive; font-size: 2rem;">A</a>
+    <ul>
+    <li><a href="#portfolio">Work</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
   </nav>
 
   <header class="container text-center my-5">
-    <h1 class="name-heading">
-  <span class="monsieur-la-doulaise-regular"><strong>A</strong></span>udryssa <span class="monsieur-la-doulaise-regular"><strong>Y</strong></span>uanwie
-</h1>
-    <h1>Portrait & Travel Photography</h1>
-    <p>New York ✦ Jakarta</p>
+    <h1 class="angelissa">Audryssa Yuanwie</h1>
+    <h3 style="font-style: italic;">Portrait & Travel Photography</h3>
+    <p>NEW YORK ✦ JAKARTA</p>
+    <a href="#portfolio" class="btn btn-outline-dark mt-3">
+  View Portfolio
+</a>
+
   </header>
 
-  <section class="container my-5">
-    <h2>Portfolio!!!!!</h2>
-    <!-- Your photo grid goes here -->
-  </section>
+  <section class="container my-5" id="portfolio">
+  <h3 class="angelissa mb-4">My Work</h3>
+
+  <div class="row g-4">
+    <div class="col-12 col-sm-6 col-lg-4">
+      <div class="photo-wrapper">
+        <img src="{{ url_for('static', filename='images/photo1.jpg') }}" alt="Photo 1" class="img-fluid rounded shadow-sm">
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-4">
+      <div class="photo-wrapper">
+        <img src="{{ url_for('static', filename='images/photo2.jpg') }}" alt="Photo 2" class="img-fluid rounded shadow-sm">
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-4">
+      <div class="photo-wrapper">
+        <img src="{{ url_for('static', filename='images/photo3.jpg') }}" alt="Photo 3" class="img-fluid rounded shadow-sm">
+      </div>
+    </div>
+    <!-- Repeat div.col for more -->
+  </div>
+</section>
+
 
   <footer class="text-center py-4">
     <small>&copy; Audryssa Yuanwie 2025</small>

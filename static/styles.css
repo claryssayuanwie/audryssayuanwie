@@ -18,11 +18,68 @@
     top: 2px; /* fine-tune alignment if needed */
 }
 
+@font-face {
+  font-family: 'Angelissa';
+  src: url('/static/fonts/Angelissa.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.angelissa {
+  font-family: 'Angelissa', cursive;
+  font-size: 200px;
+  font-weight: normal;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: -30px;
+}
+
+h1.angelissa {
+  font-size: 200px;
+}
+
+h2.angelissa {
+  font-size: 150px;
+}
+
+h3.angelissa {
+  font-size: 100px;
+}
 
 body {
-  font-family: 'Helvetica Neue', sans-serif;
+  font-family: "Young Serif", serif;
   background-color: var(--dove);
   color: var(--charcoal);
 }
 
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  display: inline-block;
+  margin: 0 30px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: var(--blush);  /* dark brown text */
+  transition: color 0.3s ease;
+}
+
+.btn-outline-dark {
+  background-color: var(--blush);   /* Light blush base */
+  color: var(--charcoal);           /* Dark text */
+  font-family: 'Young Serif', serif;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.btn-outline-dark:hover,
+.btn-outline-dark:active,
+.btn-outline-dark:focus {
+  background-color: #d49e9b;  /* Slightly richer blush on hover */
+}
 
